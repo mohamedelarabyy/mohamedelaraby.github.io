@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignments - GET vs POST</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #0f172a; color: #f8fafc; padding: 40px 20px; line-height: 1.6; }
+        .container { max-width: 800px; margin: 0 auto; background: #1e293b; padding: 30px; border-radius: 12px; border: 1px solid #334155; }
+        h1 { color: #38bdf8; border-bottom: 2px solid #334155; padding-bottom: 10px; }
+        h2 { color: #7dd3fc; margin-top: 25px; }
+        p, li { color: #cbd5e1; }
+        ul { padding-left: 20px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; background: #0f172a; border-radius: 8px; overflow: hidden; }
+        th, td { border: 1px solid #334155; padding: 12px; text-align: left; }
+        th { background: #1e293b; color: #38bdf8; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Assignment: GET vs POST Requests</h1>
+
+        <h2>1. What are they for?</h2>
+        <ul>
+            <li><strong>GET:</strong> Used to <strong>fetch or read</strong> data from a server (e.g., searching or viewing a page).</li>
+            <li><strong>POST:</strong> Used to <strong>send or create</strong> new data on a server (e.g., logging in or uploading a file).</li>
+        </ul>
+
+        <h2>2. Where is the data sent?</h2>
+        <ul>
+            <li><strong>GET:</strong> Attached directly to the <strong>URL</strong> (e.g., <code>website.com/search?item=phone</code>).</li>
+            <li><strong>POST:</strong> Hidden inside the <strong>Request Body</strong>.</li>
+        </ul>
+
+        <h2>3. Security</h2>
+        <ul>
+            <li><strong>GET:</strong> <strong>Less secure</strong> for sensitive data because it is visible in the URL and saved in browser history.</li>
+            <li><strong>POST:</strong> <strong>More secure</strong> because data is hidden inside the request body and not saved in browser history.</li>
+        </ul>
+
+        <h2>4. Data Size & Type</h2>
+        <ul>
+            <li><strong>GET:</strong> Limited size (URL length limits), Text only.</li>
+            <li><strong>POST:</strong> No strict size limit, Supports Text, JSON, Files, Images, Videos.</li>
+        </ul>
+
+        <h2>5. Caching & Refresh Behavior</h2>
+        <ul>
+            <li><strong>GET:</strong> Responses can be cached for faster loading; reloads smoothly on refresh.</li>
+            <li><strong>POST:</strong> Responses are not cached automatically; shows a warning on refresh to prevent double submission.</li>
+        </ul>
+
+        <h2>Summary Table</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th>GET</th>
+                    <th>POST</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Main Goal</strong></td>
+                    <td>Read / Fetch data</td>
+                    <td>Send / Create data</td>
+                </tr>
+                <tr>
+                    <td><strong>Data Location</strong></td>
+                    <td>Inside URL</td>
+                    <td>Inside Request Body</td>
+                </tr>
+                <tr>
+                    <td><strong>Data Visibility</strong></td>
+                    <td>Visible to everyone</td>
+                    <td>Hidden</td>
+                </tr>
+                <tr>
+                    <td><strong>Data Limit</strong></td>
+                    <td>Small (URL length)</td>
+                    <td>Large (No strict limit)</td>
+                </tr>
+                <tr>
+                    <td><strong>Data Types</strong></td>
+                    <td>Text only</td>
+                    <td>Text, JSON, Files, Images</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
